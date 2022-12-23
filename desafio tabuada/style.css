@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #303030;
+}
+header,section{
+    background-color: #303030;
+    width: 20rem;
+}
+header img{
+    width: 50%;
+}
+#header{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title h1{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+}
+#numbers{
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+#numbers input{
+    margin-top: 0.5rem;
+}
+#numbers p{
+    margin-bottom: 2rem;
+}
+#calc{
+    border-radius: 1rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-image: linear-gradient(to right, blue, rgb(107, 107, 252));
+    cursor: pointer;
+}
+#calc:hover{
+    background-image: linear-gradient(to left, blue, rgb(107, 107, 252));
+}
+#resposta{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#reset{
+    display: none;
+}
+#reset button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color:  white;
+    background-color: #303030;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#reset button:hover{
+    background-color: rgb(121, 116, 116);
+    color: black;
+}

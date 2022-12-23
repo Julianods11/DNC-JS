@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <img src="logo dnc.png" alt="">
+            </div>
+            <div id="title"> 
+                <h1> Tabuada </h1>
+            </div>
+        </div>
+    </header>
+    <section>
+<form action="">
+        <div id="tabuada">
+            <div id="numbers">
+
+            <p>
+                Qual número você deseja saber a tabuada? <br>
+                <input type="number" id="num">
+            </p>
+    
+            <p id="input">
+                Até que número você quer? <br>
+                <input type="number" id="end">
+            </p>
+
+            </div>
+            <div>
+                <input type="button" id="calc" value="Calcular" onclick="tabuada()">
+            
+            </div>
+            <div id="resposta">
+                <p>
+                   Preencha os valores acima!
+                </p>   
+            </div>
+            <div id="reset">
+                <button type="reset" onclick="resetAll()">Reiniciar</button>
+            </div>
+
+        </div>
+
+    </form>
+    </section>
+    <script src="tabuada_script.js"></script>
+</body>
+</html>
