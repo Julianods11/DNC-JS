@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <title>Desafio da Lâmpada</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo dnc.png" alt="">
+        </div>
+        <div id="title">
+            <h1>Lâmpada</h1>
+        </div>
+    </header>
+
+    <section>
+        <div id="lamp">
+            <div class="input-group">
+                <span class="input-group-addon"><img src="lampGood.svg" id="good" onclick="crash()"></span>
+                <input type="text" hidden />
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><img src="lampTurnOn.svg" id="on" onclick="crash()"></span>
+                <input type="text" hidden />
+            </div>
+            <img id="crash" src="lampCrashed.svg" alt="">
+        </div>
+        <div id="buttons">
+            <div id="button">
+                <input type="button" name="button" id="b1" value="Ligar" onclick="ligar()" class="button">
+            </div>
+
+            <div id="repair">
+                <input type="button" name="buttoff" id="b2" value="Consertar" onclick="consertar()" class="button">
+            </div>
+
+            <div id="buttoff">
+                <input type="button" name="buttoff" id="b3" value="Desligar" onclick="desligar()" class="button">
+            </div>
+        </div>
+
+    </section>
+
+    
+    <script src="config.js"></script>
+
+</body>
+
+</html>

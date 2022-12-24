@@ -33,6 +33,12 @@ function resetAll(){
     window.document.getElementById('reset').style.display = 'none';
 }
 
+function noValue(){
+var res = window.document.getElementById('resposta')
 
+    if(num.value.length == 0 || end.value.length == 0){
+        res.innerHTML = 'Faltam valores a serem inseridos!'
+    }
+}
 
 

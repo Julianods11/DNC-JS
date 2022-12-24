@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #303030;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+}
+header img{
+    width: 50%;
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+}
+#title{
+    font-family: 'Bitter', serif;
+    font-size: 1.5rem;
+    align-items: center;
+    position:relative;
+    left: 25%;
+    color: aliceblue;
+}
+section{
+    background-color: white;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 31%;
+    border-radius: 2rem;
+}
+#buttons{
+    display: grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 1fr;
+    margin-bottom: 1rem;
+}
+#buttons input{
+    width: 8rem;
+    height: 1.5rem;
+    background-color: #00abff;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+}
+#buttons input:hover{
+    background-color: aqua;
+}
+#button input{
+    position: relative;
+    right: 50%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#buttoff input{
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+}
+#repair{
+    display: none;
+    margin-bottom: 1rem;
+}
+#crash{
+    display: none;
+}
+#on{
+    display: none;
+}
+#lamp{
+    z-index: 10;
+}
+#good{
+    cursor: pointer;
+}
+#on{
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+
+    border: 2px solid #7effb2;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    cursor: pointer;
+
+}
+@keyframes pulse{
+    from{
+        box-shadow: 0 0 25px #7effb2, 0 0 50px #2cd9ff;
+    }
+}
+.button:focus{
+    animation: pulse 0.5s ease-in-out;
+}
